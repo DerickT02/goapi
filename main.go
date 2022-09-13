@@ -16,7 +16,7 @@ func main() {
 
 	r.GET("/", routes.GetStart)
 	r.GET("/people", routes.GetPeople)
-	r.GET("/people/:id", routes.UpdatePerson)
+	r.PATCH("/people/:id", routes.UpdatePerson)
 	r.POST("/people", routes.PostPeople)
 	r.DELETE("/people/:id", routes.DeletePerson)
 
