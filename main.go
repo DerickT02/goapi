@@ -9,9 +9,11 @@ import (
 
 
 func main() {
+	//Declaring Routes and running server
 	fmt.Println("Hello World")
 	r := gin.Default()
 
+	//connect to Database using connection function from models package
 	models.DBConn()
 
 	r.GET("/", routes.GetStart)
